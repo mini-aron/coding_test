@@ -1,13 +1,8 @@
 function solution(arr) {
     var answer = [...arr];
     let arr1= [];
-    let maxLength = 0;
-    for (const subArray of arr) {
-  if (subArray.length > maxLength) {
-    maxLength = subArray.length;
-  }
- }
-    maxLength = maxLength>arr.length?maxLength:arr.length
+    let maxLength = 0
+    maxLength = arr[0].length>arr.length?arr[0].length:arr.length
     
     answer.forEach((i)=>{
         while(i.length<maxLength){
